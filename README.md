@@ -20,3 +20,9 @@ dependencies:
     sdk: flutter
 ```
 
+To get search data from the api use - https://api.unsplash.com/search/photos?page=${page}&query=${image_query}&per_page=15&client_id=${Your_Access_KEy}
+
+Save required information like username, image_url, description, etc..... in a list.
+
+Design your app and use this this list to provide information to it. 
+
