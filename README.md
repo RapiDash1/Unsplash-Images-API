@@ -7,8 +7,8 @@ This is an app developed using the flutter framework. This app displays images t
 Create an account at https://unsplash.com/developers and register your app to get an access key.
 This access key will be used to get search results
 
----
-Dependencies required : 
+
+### Dependencies required : 
 ```
 dependencies:
   http:
