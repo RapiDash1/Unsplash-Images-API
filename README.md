@@ -64,3 +64,8 @@ Finally dispose the controller.
     _scrollController.dispose();
   }
 ```
+
+
+![](https://media.giphy.com/media/QuOWgk9kLvFEvXz2Zl/giphy.gif)
+---
+![](https://media.giphy.com/media/f5wEBwufLWncPh3yDE/giphy.gif)
