@@ -20,9 +20,47 @@ dependencies:
     sdk: flutter
 ```
 
-To get search data from the api use - https://api.unsplash.com/search/photos?page=${page}&query=${image_query}&per_page=15&client_id=${Your_Access_KEy}
+To get search data from the api use - https://api.unsplash.com/search/photos?page=${page}&query=${image_query}&per_page=${Images_per_page}&client_id=${Your_Access_Key}
 
 Save required information like username, image_url, description, etc..... in a list.
 
-Design your app and use this this list to provide information to it. 
+Design your app and use this list to provide information to it. 
 
+
+### Scroll controller :
+Use a scroll controller to implement infinite scrolling into the app.
+
+Initialize a scroll controller :
+
+```
+var _scrollController = ScrollController();
+```
+
+Update _scrollController everytime scrolling reaches max extent.
+
+```
+@override
+    void initState() {
+    super.initState();
+    //update UnsplashImages function and app new page to list
+    UnsplashImages(Query);
+    _scrollController.addListener((){
+      if(_scrollController.position.maxScrollExtent == _scrollController.offset){
+        setState(() {
+           UpdatedInfo(Query); 
+          });
+      }
+    });
+  }
+```
+
+Use this controller for the controller on staggered grid widget.
+
+Finally dispose the controller.
+```
+@override
+  void dispose() {
+    super.dispose();
+    _scrollController.dispose();
+  }
+```
