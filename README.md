@@ -54,7 +54,7 @@ Update _scrollController everytime scrolling reaches max extent.
   }
 ```
 
-Use this controller for the controller on staggered grid widget.
+Use this controller for the controller parameter in staggered grid widget.
 
 Finally dispose the controller.
 ```
